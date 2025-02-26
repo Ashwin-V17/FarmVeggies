@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home"
+        android:title="@string/menu_home"
+        android:fontFamily="@font/oswald"
+        />
+
+    <item
+        android:id="@+id/navigation_category"
+        android:icon="@drawable/list"
+        android:title="@string/menu_category"
+        android:fontFamily="@font/oswald"
+        />
+  <!--  <item
+        android:id="@+id/navigation_megaoffer"
+        android:icon="@drawable/email"
+        android:title="Mega Offer"
+        android:fontFamily="@font/poppins"
+        />-->
+    <item
+        android:id="@+id/navigation_mega"
+        android:icon="@drawable/order"
+        android:title="Orders"
+        android:fontFamily="@font/oswald"
+        />
+
+    <item
+        android:id="@+id/navigation_offer"
+        android:icon="@drawable/user"
+        android:title="profile"
+        android:fontFamily="@font/oswald"
+        />
+    <item
+        android:id="@+id/navigation_cart"
+        android:title="@string/menu_cart"
+        app:actionLayout="@layout/layout_cart"
+        android:icon="@drawable/basket"
+        android:fontFamily="@font/oswald"
+        />
+
+</menu>

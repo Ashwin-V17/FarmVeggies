@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/toolbar" android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="4dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/badge_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <RelativeLayout android:id="@+id/relative_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_cart" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_shopping_cart"/>
+            </RelativeLayout>
+            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@+id/badge_notification" android:background="@drawable/item_count" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_alignRight="@+id/relative_layout" android:fontFamily="@font/oswald"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>

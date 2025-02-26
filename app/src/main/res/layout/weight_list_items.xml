@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:id="@+id/cv_card" android:layout_width="250dp" android:layout_height="50dp" android:layout_margin="5dp" app:cardCornerRadius="1dp" app:cardUseCompatPadding="true">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/lin_recy" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textStyle="bold" android:textColor="@color/colorPrimary" android:layout_gravity="center_vertical" android:id="@+id/graa" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Name" android:layout_weight="0.6" android:textAlignment="center"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/colorTextBlack" android:layout_gravity="center_vertical" android:id="@+id/tv_price" android:layout_width="0dp" android:layout_height="wrap_content" android:text="200kg" android:layout_weight="0.6" android:textAlignment="center"/>
+        <TextView android:textSize="13sp" android:textColor="@color/colorTextBlack" android:layout_gravity="center_vertical" android:id="@+id/tv_mrp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="MRP" android:layout_weight="1" android:textAlignment="center"/>
+    </LinearLayout>
+    <TextView android:textSize="13sp" android:textColor="@color/colorTextBlack" android:layout_gravity="center_vertical" android:id="@+id/tv_wid" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textAlignment="center"/>
+</androidx.cardview.widget.CardView>

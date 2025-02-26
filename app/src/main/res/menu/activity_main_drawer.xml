@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/list"
+            android:title="@string/menu_category"
+            android:fontFamily="@font/oswald"
+            />
+        <item
+            android:id="@+id/nav_whatsup"
+            android:icon="@drawable/whats"
+            android:title="@string/menu_whatsup"
+            android:fontFamily="@font/oswald"
+            />
+        <item
+            android:id="@+id/nav_refer"
+            android:icon="@drawable/rupeee"
+            android:title="Refer &amp; Earn"
+            android:fontFamily="@font/oswald"
+            />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/order"
+            android:title="@string/menu_orders"
+            android:fontFamily="@font/oswald"
+            />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/user"
+            android:title="@string/menu_profile"
+            android:fontFamily="@font/oswald"
+            />
+        <item
+            android:id="@+id/nav_offers"
+            android:icon="@drawable/email"
+            android:title="@string/menu_offer"
+            android:visible="false"
+            android:fontFamily="@font/oswald"
+            />
+        <item
+            android:id="@+id/nav_store"
+            android:icon="@drawable/ic_store_black_24dp"
+            android:visible="false"
+            android:title="@string/menu_store"
+            android:fontFamily="@font/oswald"
+            />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about"
+            android:title="@string/menu_about"
+            android:fontFamily="@font/oswald"
+            />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/support"
+            android:title="@string/menu_help"
+            android:fontFamily="@font/oswald"
+            />
+        <item
+            android:id="@+id/nav_helpreturn"
+            android:icon="@drawable/tracking"
+            android:title="Delivery &amp; Returns "
+            android:fontFamily="@font/oswald"
+            android:visible="false"
+            />
+        <item
+            android:id="@+id/nav_language"
+            android:icon="@drawable/logout"
+            android:title="Language"
+            android:fontFamily="@font/oswald"
+            android:visible="false"
+            />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/menu_logout"
+            android:fontFamily="@font/oswald"
+            />
+    </group>
+</menu>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/border_trans" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+                <ImageView android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/logo" android:layout_alignParentStart="true"/>
+                <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/blue" android:gravity="center" android:layout_gravity="center" android:id="@+id/textView1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Feedback" android:layout_centerVertical="true" android:fontFamily="@font/oswald" android:layout_marginStart="10dp"/>
+            </RelativeLayout>
+            <View android:id="@+id/separator" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="5dp" android:layout_marginTop="5dp" android:layout_below="@+id/rateHeader"/>
+            <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/colortext" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Please Rate Your Order  :" android:fontFamily="@font/oswald" android:textAlignment="textStart"/>
+            <RatingBar android:layout_gravity="center" android:id="@+id/ratingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:numStars="5" android:stepSize="1" android:progressTint="@color/gold" style="@style/customRatingBarr"/>
+            <TextView android:textColor="@color/gray" android:id="@+id/ratingvalue" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/oswald"/>
+            <EditText android:textColor="@color/colortext" android:id="@+id/review" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:hint="Write Your Review(200 Characters)" android:lines="4" android:fontFamily="@font/oswald"/>
+            <Button android:textAppearance="?android:attr/textAppearanceMedium" android:textStyle="bold" android:textColor="@color/colorWhite" android:layout_gravity="center" android:id="@+id/submitRateBtn" android:background="@drawable/border_button" android:layout_width="150dp" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="Submit" android:textAllCaps="false" android:fontFamily="@font/oswald"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

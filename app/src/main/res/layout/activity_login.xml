@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_logo" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginTop="30dp" android:src="@drawable/new_logo" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:layout_gravity="center" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:fontFamily="@font/oswald"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_phno" android:background="@drawable/border_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:layout_centerInParent="true" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="16sp" android:textColor="@color/colorTextBlack" android:gravity="center" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+91" android:fontFamily="@font/oswald" android:layout_marginStart="20dp" android:layout_marginEnd="10dp"/>
+                <EditText
+                    android:id="@+id/txt_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorTextBlack"
+                android:textColorHint="@color/colortext"
+                android:hint="Mobile Number"
+                android:maxLength="10"
+                android:drawableRight="@drawable/ic_phone_iphone_black_24dp"
+                android:inputType="phone"
+                android:fontFamily="@font/oswald"
+                android:backgroundTint="@android:color/transparent"/>
+
+            </LinearLayout>
+            <EditText android:textSize="15sp" android:textColor="@color/colorTextBlack" android:textColorHint="@color/colortext" android:id="@+id/new_pass" android:background="@drawable/border_blue" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:hint=" Password" android:drawableRight="@drawable/lock" android:inputType="textPassword" android:fontFamily="@font/oswald" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/colorGreen" android:gravity="end" android:id="@+id/show" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Show" android:layout_below="@+id/new_pass" android:fontFamily="@font/oswald" android:textAlignment="textEnd" android:layout_marginEnd="20dp"/>
+            <Button android:textSize="18sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:layout_gravity="center" android:id="@+id/btn_login" android:background="@drawable/border_button" android:layout_width="150dp" android:layout_height="50dp" android:layout_margin="10dp" android:text="Login" android:layout_below="@+id/show" android:layout_centerHorizontal="true" android:textAllCaps="false" android:fontFamily="@font/oswald"/>
+            <RelativeLayout android:id="@+id/rel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/btn_login">
+                <TextView android:textSize="14dp" android:textColor="@color/colorTextBlack" android:id="@+id/lost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Lost your password?" android:layout_centerHorizontal="true" android:fontFamily="@font/oswald" android:textAlignment="center"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/signup_lin" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="14dp" android:textColor="@color/colorTextBlack" android:id="@+id/signup" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Don&apos;t have an account ? " android:layout_centerInParent="true" android:fontFamily="@font/oswald" android:textAlignment="center"/>
+                <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text=" Signup" android:fontFamily="@font/oswald" android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

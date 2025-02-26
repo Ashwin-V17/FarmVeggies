@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="5dp">
+    <RelativeLayout android:id="@+id/linn" android:background="@drawable/border_radius" android:layout_width="260dp" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/images" android:layout_width="260dp" android:layout_height="345dp"/>
+        <ImageView android:id="@+id/cancel" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/cancel" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

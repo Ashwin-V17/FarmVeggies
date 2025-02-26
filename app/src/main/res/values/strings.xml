@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Farm Veggies</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Welcome</string>
+    <string name="nav_header_subtitle">Need Help?</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_category">Categories</string>
+    <string name="menu_profile">My Profile</string>
+    <string name="menu_orders">My Orders</string>
+    <string name="menu_about">About us</string>
+    <string name="menu_help">Help &amp; Support</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_offer">Offers</string>
+    <string name="menu_store">Change Store</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_cart">Cart</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_whatsup">WhatsApp</string>
+
+    <string name="error">error</string>
+    <string name="alert_yes">Yes</string>
+    <string name="alert_ok">Ok</string>
+
+    <string name="alert_no">No</string>
+    <string name="logout_success">LogOut</string>
+    <string name="alert_want_logout">Are you want to Logout?</string>
+    <string name="default_notification_channel_id">Notification</string>
+    <string name="fcm_message">New Offer</string>
+    <string name="minimum"> Minimum Purchase Amount  Rs.500</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alert_want_cancel">Are you sure to cancel this order?</string>
+    <string name="facebook_app_id">1022379911620814</string>
+    <string name="fb_login_protocol_scheme">fb[1022379911620814]</string>
+
+    <string name="restart">restart</string>
+
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <AutoCompleteTextView android:textSize="15sp" android:textColor="@color/colortext" android:textColorHint="@color/gray" android:id="@+id/auto_search" android:background="@drawable/border" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:hint="Search (e.g. Fruits,Vegetables)" android:maxLines="1" android:lines="1" android:singleLine="true" android:drawablePadding="10dp" android:drawableEnd="@drawable/ic_search_black_24dp" android:fontFamily="@font/oswald"/>
+    <TextView android:id="@+id/cid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/oswald"/>
+</LinearLayout>

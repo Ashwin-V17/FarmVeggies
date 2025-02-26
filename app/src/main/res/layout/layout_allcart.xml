@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/badge_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true">
+    <RelativeLayout android:id="@+id/relative_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20dp">
+        <ImageView android:id="@+id/iv_cart" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/wh_basket"/>
+    </RelativeLayout>
+    <TextView android:textSize="8sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@+id/badge_notification" android:background="@drawable/item_count" android:layout_width="15dp" android:layout_height="15dp" android:text="0" android:layout_alignRight="@+id/relative_layout" android:fontFamily="@font/oswald"/>
+</RelativeLayout>

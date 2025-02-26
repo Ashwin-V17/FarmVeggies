@@ -1,0 +1,41 @@
+[versions]
+agp = "8.8.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.10.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+volley = "1.2.1"
+gotev_uploadservice = "4.7.0"
+jackson_core = "2.18.2"
+play_services_measurement = "22.1.2"
+razorpay = "1.6.41"
+glide = "4.16.0"
+carouselview = "0.1.4"
+uiAndroid = "1.7.8"
+
+
+[libraries]
+gotev_uploadservice = { module = "net.gotev:uploadservice", version.ref = "gotev_uploadservice" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+volley = { module = "com.android.volley:volley", version.ref = "volley" }
+jackson_core = { module = "com.fasterxml.jackson.core:jackson-core", version.ref = "jackson_core" }
+play_services_measurement = { module = "com.google.android.gms:play-services-measurement-api", version.ref = "play_services_measurement" }
+razorpay = { module = "com.razorpay:checkout", version.ref = "razorpay" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+glide_compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+carouselview = { module = "com.synnapps:carouselview", version.ref = "carouselview" }
+ui-android = { group = "androidx.compose.ui", name = "ui-android", version.ref = "uiAndroid" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

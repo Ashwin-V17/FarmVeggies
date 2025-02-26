@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:id="@+id/cv_card" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="10dp" app:cardUseCompatPadding="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_parent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp">
+            <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:background="@color/colorWhite" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="5">
+                <ImageView android:layout_gravity="center" android:id="@+id/improduct" android:layout_width="50dp" android:layout_height="100dp" android:src="@drawable/orders" android:adjustViewBounds="true" android:layout_weight="1" android:resizeMode="none|horizontal|vertical"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="4">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                        <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/colortext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Order No :" android:fontFamily="@font/oswald" android:layout_marginStart="5dp"/>
+                        <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/colorGreen" android:id="@+id/orderid" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/oswald" android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/colortext" android:id="@+id/tv_total" android:layout_width="0dp" android:layout_height="wrap_content" android:text="₹ 1000" android:layout_weight="0.8" android:fontFamily="@font/oswald" android:textAlignment="textStart" android:layout_marginStart="5dp"/>
+                        <TextView android:textSize="15dp" android:textStyle="bold" android:id="@+id/cancel_tx" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:layout_weight="1.2" android:fontFamily="@font/oswald" android:textAlignment="textStart" android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginStart="5dp">
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_radio_button_checked_black_24dp"/>
+                        <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/colortext" android:id="@+id/orderdate" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Order placed On Thu,Jun 21 st&apos;18" android:fontFamily="@font/oswald" android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+            </LinearLayout>
+            <View android:background="@color/gray" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <RatingBar android:layout_gravity="center" android:id="@+id/ratingBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="1" android:fontFamily="@font/oswald" android:progressTint="@color/gold" style="@style/customRatingBar"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

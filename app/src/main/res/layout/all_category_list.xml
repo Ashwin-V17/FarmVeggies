@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/cv_card" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorWhite" app:cardCornerRadius="30dp" app:cardUseCompatPadding="true">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="160dp" android:layout_height="160dp">
+        <com.mikhaellopez.circularimageview.CircularImageView android:id="@+id/ivMenu" android:background="@android:color/transparent" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/new_logo" android:elevation="10dp" app:civ_border_color="#bc95c764" app:civ_border_width="1dp" app:civ_shadow="true" app:civ_shadow_color="@color/lightgray" app:civ_shadow_radius="0.5dp"/>
+        <TextView android:textSize="16dp" android:textColor="@color/colorTextBlack" android:id="@+id/title" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ssss" android:fontFamily="@font/oswald" android:textAlignment="center"/>
+    </LinearLayout>
+    <TextView android:id="@+id/ms_exc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+</androidx.cardview.widget.CardView>

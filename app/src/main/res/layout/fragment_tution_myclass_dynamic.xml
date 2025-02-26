@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="50dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <AutoCompleteTextView android:textSize="15sp" android:textColor="@color/colortext" android:textColorHint="@color/gray" android:id="@+id/auto_search" android:background="@drawable/border" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="6dp" android:layout_marginRight="10dp" android:text="" android:hint="Search (e.g. Fruits,Vegerables)" android:maxLines="1" android:lines="1" android:singleLine="true" android:drawablePadding="10dp" android:drawableEnd="@drawable/ic_search_black_24dp" android:fontFamily="@font/oswald"/>
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@+id/rv_menuList" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/btn_checkout" android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Continue" android:textAllCaps="false" android:fontFamily="@font/oswald" android:layout_alignParentEnd="true"/>
+    </LinearLayout>
+</FrameLayout>
