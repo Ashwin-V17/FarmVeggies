@@ -151,7 +151,7 @@ public class OfferActivity extends AppCompatActivity {
 
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
-        final MenuItem menuItem = menu.findItem(R.id.action_cart);
+        final MenuItem menuItem = menu.findItem(R.id.action_cart1);
         View actionView = MenuItemCompat.getActionView(menuItem);
         this.badge_notification = (TextView) actionView.findViewById(R.id.badge_notification);
         actionView.setOnClickListener(new View.OnClickListener() {
@@ -163,7 +163,7 @@ public class OfferActivity extends AppCompatActivity {
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() != R.id.action_cart) {
+        if (item.getItemId() != R.id.action_cart1) {
             return super.onOptionsItemSelected(item);
         }
         startActivity(new Intent(this, CartActivity.class));

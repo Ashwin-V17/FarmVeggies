@@ -5,7 +5,7 @@ import com.shop.veggies.model.UserModel;
 public class ProductConfig {
    // public static String baseUrl = "http://farmveggies.co.in/stage/api/";
 
-    public static String baseUrl = "http://farmveggies.co.in/api/";
+    public static String baseUrl = "https://minsway.in/webteam/formvegas.co.in/freshplus/api/";
 
     public static String addcart = (baseUrl + "addcart.php");
     public static String appstatus = (baseUrl + "apistatus.php");

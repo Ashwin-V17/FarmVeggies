@@ -21,6 +21,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.shop.veggies.R;
 import com.shop.veggies.model.UserModel;
@@ -51,22 +52,15 @@ public class CheckOtpActivity extends AppCompatActivity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        FirebaseApp.initializeApp(this);
         setContentView(R.layout.activity_checkotp);
-
         getBundle();
         phone = BSession.getInstance().getUser_mobile(this);
         deviceid = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
         ((NotificationManager) getApplicationContext().getSystemService(NOTIFICATION_SERVICE)).cancel(0);
 
         // Get FCM Token
-        FirebaseMessaging.getInstance().getToken()
-                .addOnCompleteListener(task -> {
-                    if (task.isSuccessful()) {
-                        FcmToken = task.getResult();
-                    } else {
-                        FcmToken = "";
-                    }
-                });
+
 
         initializeUi();
         setListeners();
@@ -116,7 +110,9 @@ public class CheckOtpActivity extends AppCompatActivity implements View.OnClickL
     }
 
     private void checkOTP() {
-        progressDialog.show();
+        if (!CheckOtpActivity.this.isFinishing()) {
+            progressDialog.show();  // Show only if the activity is running
+        }
 
         String baseUrl = ProductConfig.userotpverify +
                 "?user_mobile=" + phone +
@@ -127,7 +123,9 @@ public class CheckOtpActivity extends AppCompatActivity implements View.OnClickL
         StringRequest jsObjRequest = new StringRequest(Request.Method.GET, baseUrl,
                 response -> {
                     Log.e("Response", response);
-                    progressDialog.dismiss();
+                    if (!CheckOtpActivity.this.isFinishing() && progressDialog.isShowing()) {
+                        progressDialog.dismiss();  // Dismiss safely
+                    }
                     try {
                         JSONObject jsonResponse = new JSONObject(response);
 
@@ -152,7 +150,7 @@ public class CheckOtpActivity extends AppCompatActivity implements View.OnClickL
                                         jsonResponse.getString("user_mobile"),
                                         "", "", "", "");
 
-                                Intent i = new Intent(CheckOtpActivity.this, CheckoutActivity.class);
+                                Intent i = new Intent(CheckOtpActivity.this, MainActivity.class);
                                 startActivity(i);
                                 finish();
                             }
@@ -163,10 +161,13 @@ public class CheckOtpActivity extends AppCompatActivity implements View.OnClickL
                 },
                 error -> {
                     Log.e("Error", error.toString());
-                    progressDialog.dismiss();
+                    if (!CheckOtpActivity.this.isFinishing() && progressDialog.isShowing()) {
+                        progressDialog.dismiss();  // Dismiss safely
+                    }
                 });
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(jsObjRequest);
     }
+
 }

@@ -204,7 +204,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         bottomNavigationView.setOnItemSelectedListener(item -> {
             int itemId = item.getItemId();
 
-            if (itemId == R.id.navigation_cart) {
+            if (itemId == R.id.navigation_cart1) {
                 startActivity(new Intent(MainActivity.this, CartActivity.class));
                 return true;
             } else if (itemId == R.id.navigation_category) {
@@ -216,7 +216,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             } else if (itemId == R.id.navigation_mega) {
                 startActivity(new Intent(MainActivity.this, MyordersActivity.class));
                 return true;
-            } else if (itemId == R.id.navigation_offer) {
+            } else if (itemId == R.id.navigation_user) {
                 startActivity(new Intent(MainActivity.this, ProfileActivity.class));
                 return true;
             }
@@ -339,7 +339,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
 
         navigationView.setNavigationItemSelectedListener(this);
-
+//home
         View hView = navigationView.getHeaderView(0);
         capture_img = hView.findViewById(R.id.iv_profile);
         tv_name = hView.findViewById(R.id.tv_name);
@@ -385,7 +385,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         search.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), SearchActivity.class)));
     }
     private void addBadgeToCart() {
-        BadgeDrawable badge = navigation.getOrCreateBadge(R.id.navigation_cart);
+        BadgeDrawable badge = navigation.getOrCreateBadge(R.id.navigation_cart1);
         badge.setVisible(true);
         badge.setNumber(5); // Example count
     }
@@ -421,7 +421,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
-        final MenuItem menuItem = menu.findItem(R.id.action_cart);
+        final MenuItem menuItem = menu.findItem(R.id.action_cart1);
         View actionView = MenuItemCompat.getActionView(menuItem);
         this.badge_notification = (TextView) actionView.findViewById(R.id.badge_notification);
         getCartCount();
@@ -435,7 +435,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() != R.id.action_cart) {
+        if (item.getItemId() != R.id.action_cart1) {
             return super.onOptionsItemSelected(item);
         }
         startActivity(new Intent(this, CartActivity.class));

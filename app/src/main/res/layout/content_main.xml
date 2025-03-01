@@ -2,17 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
     <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
         <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/closed_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="120dp">
-            <ImageView android:layout_gravity="center" android:layout_width="150dp" android:layout_height="100dp" android:src="@drawable/closed"/>
+            <ImageView android:contentDescription="@string/alert_ok" android:layout_gravity="center" android:layout_width="150dp" android:layout_height="100dp" android:src="@drawable/closed"/>
             <TextView android:textSize="17dp" android:textStyle="bold" android:textColor="@color/colortext" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="We are closed for order taking now, please check tomorrow" android:fontFamily="@font/oswald" android:textAlignment="center"/>
             <TextView android:textSize="17dp" android:textColor="@color/darkgray" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="To view your order details, Menu -&gt; MyOrders" android:fontFamily="@font/oswald" android:textAlignment="center"/>
         </LinearLayout>
         <LinearLayout android:orientation="vertical" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="60dp">
-            <ImageView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <ImageView android:layout_width="match_parent" android:layout_height="50dp" android:layout_weight="200"  />
             <ImageView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
         </LinearLayout>
         <androidx.cardview.widget.CardView android:id="@+id/cart1" android:background="#eff7ef" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" app:cardCornerRadius="20dp" app:cardUseCompatPadding="true">
             <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/search" android:padding="3dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
-                <TextView android:textSize="13sp" android:textStyle="normal" android:textColor="@color/gray" android:layout_gravity="center" android:id="@+id/Serc" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Search (e.g. Fruits,vegetables)" android:layout_weight="1" android:fontFamily="@font/oswald" android:layout_marginStart="20dp"/>
+                <TextView android:textSize="13sp" android:textStyle="normal" android:textColor="@color/BlackTrans" android:layout_gravity="center" android:id="@+id/Serc" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Search (e.g. Fruits,vegetables)" android:layout_weight="1" android:fontFamily="@font/oswald" android:layout_marginStart="20dp"/>
                 <ImageView android:layout_gravity="center" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/search" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>

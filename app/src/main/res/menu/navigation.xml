@@ -15,12 +15,12 @@
         android:title="@string/menu_category"
         android:fontFamily="@font/oswald"
         />
-  <!--  <item
-        android:id="@+id/navigation_megaoffer"
-        android:icon="@drawable/email"
-        android:title="Mega Offer"
-        android:fontFamily="@font/poppins"
-        />-->
+    <!--  <item
+          android:id="@+id/navigation_megaoffer"
+          android:icon="@drawable/email"
+          android:title="Mega Offer"
+          android:fontFamily="@font/poppins"
+          />-->
     <item
         android:id="@+id/navigation_mega"
         android:icon="@drawable/order"

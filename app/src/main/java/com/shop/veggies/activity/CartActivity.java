@@ -73,8 +73,8 @@ public class CartActivity extends AppCompatActivity {
         String user_id = BSession.getInstance().getUser_id(this);
         this.idd = user_id;
         Log.d("idd", user_id);
-        this.llay_cart_empty.setVisibility(8);
-        this.layout_items.setVisibility(0);
+        this.llay_cart_empty.setVisibility(View.GONE);
+        this.layout_items.setVisibility(View.VISIBLE);
         this.mRecyclerView = (RecyclerView) findViewById(R.id.rv_cartList);
         Button button = (Button) findViewById(R.id.btn_checkout);
         this.checkout = button;
@@ -116,13 +116,13 @@ public class CartActivity extends AppCompatActivity {
                     JSONObject jsonResponse = new JSONObject(response);
                     if (!jsonResponse.has("result") || !jsonResponse.getString("result").equals("Success")) {
                         if (CartActivity.this.cartModelList.size() > 0) {
-                            CartActivity.this.llay_cart_empty.setVisibility(8);
-                            CartActivity.this.layout_items.setVisibility(0);
+                            CartActivity.this.llay_cart_empty.setVisibility(View.GONE);
+                            CartActivity.this.layout_items.setVisibility(View.VISIBLE);
                         } else {
-                            CartActivity.this.llay_cart_empty.setVisibility(0);
-                            CartActivity.this.layout_items.setVisibility(8);
+                            CartActivity.this.llay_cart_empty.setVisibility(View.VISIBLE);
+                            CartActivity.this.layout_items.setVisibility(View.GONE);
                         }
-                        Toast.makeText(CartActivity.this.getApplicationContext(), "Cart empty", 1).show();
+                        Toast.makeText(CartActivity.this.getApplicationContext(), "Cart empty", Toast.LENGTH_SHORT).show();
                         return;
                     }
                     CartActivity.this.cartModelList = new ArrayList();
@@ -142,15 +142,15 @@ public class CartActivity extends AppCompatActivity {
                         CartActivity.this.cartModelList.add(cartModel);
                     }
                     if (CartActivity.this.cartModelList.size() > 0) {
-                        CartActivity.this.llay_cart_empty.setVisibility(8);
-                        CartActivity.this.layout_items.setVisibility(0);
+                        CartActivity.this.llay_cart_empty.setVisibility(View.GONE);
+                        CartActivity.this.layout_items.setVisibility(View.VISIBLE);
                     } else {
-                        CartActivity.this.llay_cart_empty.setVisibility(0);
-                        CartActivity.this.layout_items.setVisibility(8);
+                        CartActivity.this.llay_cart_empty.setVisibility(View.VISIBLE);
+                        CartActivity.this.layout_items.setVisibility(View.GONE);
                     }
                     CartActivity.this.viewCartAdapter = new ViewCartAdapter(CartActivity.this, CartActivity.this.cartModelList);
                     CartActivity.this.mRecyclerView.setHasFixedSize(true);
-                    CartActivity.this.linearLayoutManager = new LinearLayoutManager(CartActivity.this, 1, false);
+                    CartActivity.this.linearLayoutManager = new LinearLayoutManager(CartActivity.this, RecyclerView.VERTICAL, false);
                     CartActivity.this.mRecyclerView.setLayoutManager(CartActivity.this.linearLayoutManager);
                     CartActivity.this.mRecyclerView.setAdapter(CartActivity.this.viewCartAdapter);
                     CartActivity.this.viewCartAdapter.notifyDataSetChanged();
@@ -186,7 +186,7 @@ public class CartActivity extends AppCompatActivity {
 
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
-        this.badge_notification = (TextView) MenuItemCompat.getActionView(menu.findItem(R.id.action_cart)).findViewById(R.id.badge_notification);
+        this.badge_notification = (TextView) MenuItemCompat.getActionView(menu.findItem(R.id.action_cart1)).findViewById(R.id.badge_notification);
         return true;
     }
 

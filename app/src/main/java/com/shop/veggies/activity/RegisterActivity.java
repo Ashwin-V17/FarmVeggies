@@ -103,7 +103,7 @@ public class RegisterActivity extends AppCompatActivity implements LocationListe
                             this.FcmToken = "";
                             return;
                         }
-                        // Get new FCM registration token
+
                         this.FcmToken = task.getResult();
                         Log.d("FCM Token", "Token: " + this.FcmToken);
                     });

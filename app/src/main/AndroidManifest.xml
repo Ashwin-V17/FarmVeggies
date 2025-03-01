@@ -117,7 +117,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.shop.veggies.activity.LoginActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             android:theme="@style/AppTheme.NoActionBar" android:exported="true">
             <intent-filter>
                 <action android:name="cat.ereza.customactivityoncrash.ERROR" />
@@ -149,5 +149,6 @@
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorAccent" />
     </application>
+
 
 </manifest>

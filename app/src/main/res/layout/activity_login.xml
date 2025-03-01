@@ -3,7 +3,7 @@
     <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
         <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
             <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
-                <ImageView android:id="@+id/iv_logo" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginTop="30dp" android:src="@drawable/new_logo" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+                <ImageView android:id="@+id/iv_logo" android:layout_width="300dp" android:layout_height="100dp" android:layout_marginTop="30dp" android:src="@drawable/new_logo" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
                 <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:layout_gravity="center" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:fontFamily="@font/oswald"/>
             </LinearLayout>
             <LinearLayout android:orientation="horizontal" android:id="@+id/ll_phno" android:background="@drawable/border_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:layout_centerInParent="true" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
@@ -31,9 +31,21 @@
                 <TextView android:textSize="14dp" android:textColor="@color/colorTextBlack" android:id="@+id/lost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Lost your password?" android:layout_centerHorizontal="true" android:fontFamily="@font/oswald" android:textAlignment="center"/>
             </RelativeLayout>
             <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/signup_lin" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
-                <TextView android:textSize="14dp" android:textColor="@color/colorTextBlack" android:id="@+id/signup" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Don&apos;t have an account ? " android:layout_centerInParent="true" android:fontFamily="@font/oswald" android:textAlignment="center"/>
+                <TextView android:textSize="14sp" android:textColor="@color/colorTextBlack" android:id="@+id/signup" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Don&apos;t have an account ? " android:layout_centerInParent="true" android:fontFamily="@font/oswald" android:textAlignment="center"/>
                 <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text=" Signup" android:fontFamily="@font/oswald" android:textAlignment="center"/>
             </LinearLayout>
+            <TextView
+                android:id="@+id/register_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account? Register"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

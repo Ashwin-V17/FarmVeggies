@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--res/menu/bottom_nav_menu.xml-->
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home"
         android:title="Home" />
 
     <item
-        android:id="@+id/navigation_cart"
+        android:id="@+id/navigation_cart1"
         android:icon="@drawable/ic_cart"
+        app:actionLayout="@layout/layout_cart"
         android:title="Cart" />
 
     <item
@@ -22,7 +23,7 @@
         android:title="Mega" />
 
     <item
-        android:id="@+id/navigation_offer"
-        android:icon="@drawable/ic_offer"
+        android:id="@+id/navigation_user"
+        android:icon="@drawable/ic_baseline_person_24"
         android:title="Offers" />
 </menu>
